@@ -1,21 +1,19 @@
 import React, { useState } from 'react'
+import ChildOne from './components/ChildOne.jsx'
+import ChildTwo from './components/ChildTwo.jsx'
 
 function App() {
-  // const [data,setData] = useState("Dk");
-  const [counter,setCounter]=useState(0)
-
-  function increment(){
-    setCounter((previousState)=>setCounter(previousState+1))
+  const [dataFromParent,setDataFromParent]=useState("");
+  const addData =(data)=>{
+    console.log(data);
+    setDataFromParent(data)
+    
   }
- 
-  
   return (
     <div>
-      <h1>hello from App {counter}</h1>
-      {/* <button onClick={()=>setCounter(counter+1)}>Increment</button>
-      <button onClick={()=>setCounter(counter-1)}>decrement</button> */}
-
-       <button onClick={increment}>Increment</button>
+      {/* <ChildOne addData={addData} /> */}
+      <ChildOne  name="gaurav"  email="gaurav@gmail.com"/>
+      {/* <ChildTwo dataFromParent={dataFromParent}/> */}
     </div>
   )
 }

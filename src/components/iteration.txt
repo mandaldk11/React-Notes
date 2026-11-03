@@ -1,0 +1,24 @@
+import React, { useState } from 'react'
+
+function App() {
+ const[dataArray,setDataArray]= useState(["dk",12,true,300,100]);
+
+  return (
+    <div>
+      <h1>Hello from app component</h1>
+      {
+        dataArray.map((element,index,myArr)=>{
+          return(<div key={index}>
+            {element+ "  "+ myArr
+            
+            }
+           
+            
+          </div>)
+        })
+      }
+    </div>
+  )
+}
+
+export default App
