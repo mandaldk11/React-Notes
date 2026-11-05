@@ -1,21 +1,11 @@
-import React, { useState } from 'react'
-import ChildOne from './components/ChildOne.jsx'
-import ChildTwo from './components/ChildTwo.jsx'
+import React from 'react'
+import LifeCycle from './components/LifeCycle.jsx'
 
-function App() {
-  const [dataFromParent,setDataFromParent]=useState("");
-  const addData =(data)=>{
-    console.log(data);
-    setDataFromParent(data)
-    
-  }
+export default function App() {
   return (
     <div>
-      {/* <ChildOne addData={addData} /> */}
-      <ChildOne  name="gaurav"  email="gaurav@gmail.com"/>
-      {/* <ChildTwo dataFromParent={dataFromParent}/> */}
+      <h1>hello App</h1>
+      <LifeCycle/>
     </div>
   )
 }
-
-export default App
