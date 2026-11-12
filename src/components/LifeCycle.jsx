@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class LifeCycle extends Component {
+ class LifeCycle extends Component {
   constructor(){
     super()
     console.log("constructor run...");
@@ -22,7 +22,10 @@ export default class LifeCycle extends Component {
     return (
       <div>
         <h1>Hello from lifeCycle</h1>
+        <button>toggle</button>
       </div>
     )
   }
 }
+
+export default LifeCycle
