@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
-import Lifecyle from './components/Lifecyle.jsx'
+import React from 'react'
+import Usestate from './hooks/Usestate.jsx'
 
-export default class App extends Component {
- 
-  render() {
-    return (
-      <div>
-        {/* <h1>hello from react</h1>*/}
-        <Lifecyle/>
-      </div>
-    )
-  }
+export default function App() {
+  return (
+    <div>
+      <Usestate/> 
+    </div>
+  )
 }
